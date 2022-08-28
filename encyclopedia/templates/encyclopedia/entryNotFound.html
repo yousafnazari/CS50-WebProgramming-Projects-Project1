@@ -1,0 +1,10 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    ERROR
+{% endblock %}
+
+{% block body %}
+    <h1>ERROR: '{{ name }}' not found</h1>
+    <p>The entry '{{ name }}' does not exist yet. You may wish to create it by clicking <a href="{% url 'encyclopedia:newPage' %}">here</a></p>
+{% endblock %}

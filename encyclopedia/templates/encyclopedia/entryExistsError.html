@@ -1,0 +1,10 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    ERROR
+{% endblock %}
+
+{% block body %}
+    <h1>ERROR: '{{ name }}' already exists</h1>
+    <p>The entry '{{ name }}' already exists. You may view it by clicking <a href="{% url 'encyclopedia:showEntry' name %}">here</a></p>
+{% endblock %}
